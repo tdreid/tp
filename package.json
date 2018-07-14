@@ -1,0 +1,11 @@
+{
+  "name": "tp",
+  "version": "0.1.0",
+  "description": "Transfer STEEM at regular intervals",
+  "main": "tp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Trevor Reid <trevor.d.reid@gmail.com> (http://tdreid.github.io)",
+  "license": "MIT"
+}
