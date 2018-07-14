@@ -1,7 +1,7 @@
 {
   "name": "tp",
   "version": "0.1.0",
-  "description": "Transfer STEEM at regular intervals",
+  "description": "Transfer SBD at regular intervals",
   "bin": {
     "tp": "./tp.js"
   },
