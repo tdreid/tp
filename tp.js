@@ -35,6 +35,10 @@ tp
   .arguments('<payee> <amount> <limit> <memo> <interval>')
   .option('-p, --payor <payor>', 'Payor account on the steem blockchain')
   .option('-w, --wif <wif>', 'Active key for payor account')
+  .option(
+    '-t, --test',
+    'Test mode. Direct transaction(s) to http://testnet.steem.vc'
+  )
   .action((payee, amount, limit, memo, interval) => {
     currencyIncrement = amount; 
     currencyLimit = limit;
