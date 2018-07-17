@@ -21,7 +21,16 @@ const incrementCurrencyTransferred = () => {
 };
 
 const transfer = (wif, from, to, amount, memo) => {
-  steem.api.setOptions({ url: 'https://api.steemit.com' });    
+  if (tp.test) {
+    steem.api.setOptions({
+      url: 'wss://testnet.steem.vc',
+      address_prefix: 'STX',
+      chain_id:
+        '79276aea5d4877d9a25892eaa01b0adf019d3e5cb12a97478df3298ccdd01673'
+    });
+  } else {
+    steem.api.setOptions({ url: 'https://api.steemit.com' });
+  }
   steem.broadcast.transfer(wif, from, to, amount, memo, function(err, result) {
     if(err){
         console.error(err);
