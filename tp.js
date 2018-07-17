@@ -32,10 +32,10 @@ const transfer = (wif, from, to, amount, memo) => {
     steem.api.setOptions({ url: 'https://api.steemit.com' });
   }
   steem.broadcast.transfer(wif, from, to, amount, memo, function(err, result) {
-    if(err){
-        console.error(err);
+    if (err) {
+      console.error(err);
     } else {
-        incrementCurrencyTransferred(amount);
+      incrementCurrencyTransferred(amount);
     }
   });
 };
@@ -49,10 +49,10 @@ tp
     'Test mode. Direct transaction(s) to http://testnet.steem.vc'
   )
   .action((payee, amount, limit, memo, interval) => {
-    currencyIncrement = amount; 
+    currencyIncrement = amount;
     currencyLimit = limit;
     setInterval(() => {
-       transfer(tp.wif, tp.payor, payee, `${amount} SBD`, memo);
+      transfer(tp.wif, tp.payor, payee, `${amount} SBD`, memo);
     }, interval * 1000);
   })
   .version(version)
