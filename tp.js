@@ -55,7 +55,7 @@ tp
       transfer(tp.wif, tp.payor, payee, `${amount} SBD`, memo);
     }, interval * 1000);
   })
-  .version(version)
+  .version(version, '-v, --version')
   .parse(process.argv);
 
 if (tp.args.length === 0) tp.help();
