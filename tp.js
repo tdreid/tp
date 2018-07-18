@@ -13,7 +13,10 @@ let currencyIncrement = 0.001;
 
 const incrementCurrencyTransferred = () => {
   currencyTransferred += Number(currencyIncrement);
-  console.log(`${Number(),parseFloat(currencyTransferred).toFixed(3)} SBD transferred so far.`);
+  console.log(
+    `${(Number(),
+    parseFloat(currencyTransferred).toFixed(3))} SBD transferred so far.`
+  );
   if (Number(currencyTransferred) >= Number(currencyLimit)) {
     console.log(`Transfer limit (${currencyLimit}) reached. Exiting.`);
     process.exit();
