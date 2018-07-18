@@ -49,7 +49,7 @@ tp
   .option('-w, --wif <wif>', 'Active key for payor account')
   .option(
     '-t, --test',
-    'Test mode. Direct transaction(s) to http://testnet.steem.vc'
+    'Test mode. Direct transaction(s) to wss://testnet.steem.vc'
   )
   .action((payee, amount, limit, memo, interval) => {
     currencyIncrement = amount;

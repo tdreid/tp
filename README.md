@@ -14,7 +14,7 @@ npm i -g https://github.com/tdreid/tp
 
     -p, --payor <payor>  Payor account on the steem blockchain
     -w, --wif <wif>      Active key for payor account
-    -t, --test           Test mode. Direct transaction(s) to http://testnet.steem.vc
+    -t, --test           Test mode. Direct transaction(s) to wss://testnet.steem.vc
     -v, --version        output the version number
     -h, --help           output usage information
 ```
