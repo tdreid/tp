@@ -1,6 +1,6 @@
 {
   "name": "tp",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Transfer SBD at regular intervals",
   "bin": {
     "tp": "./tp.js"
